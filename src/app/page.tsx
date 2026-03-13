@@ -1,3 +1,5 @@
+import { TelegramIntegrationStatus } from '@/components/telegram-integration-status';
+
 export default function HomePage(): JSX.Element {
   return (
     <section className='space-y-4'>
@@ -5,9 +7,7 @@ export default function HomePage(): JSX.Element {
       <p className='text-slate-600'>
         Стартовый экран проекта с базовой архитектурой, меню и мобильной навигацией.
       </p>
-      <div className='rounded-xl border border-slate-200 bg-white p-4'>
-        <p>Далее можно подключить Telegram WebApp SDK, авторизацию и API.</p>
-      </div>
+      <TelegramIntegrationStatus />
     </section>
   );
 }
