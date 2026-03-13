@@ -33,3 +33,14 @@ Then run:
 ```bash
 npm run dev
 ```
+
+## GitHub Pages deploy
+
+A workflow is configured in `.github/workflows/deploy-pages.yml`.
+
+1. Push to the `main` branch.
+2. In GitHub, open **Settings → Pages**.
+3. Set **Source** to **GitHub Actions**.
+4. Wait for workflow **Deploy Next.js to GitHub Pages** to finish.
+
+For project pages (`https://<user>.github.io/<repo>`), base path is configured automatically during GitHub Actions build.
