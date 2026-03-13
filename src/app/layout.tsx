@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 
 import '@/styles/globals.css';
 import { Footer } from '@/components/footer';
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
   return (
     <html lang='ru'>
       <body>
+        <Script src='https://telegram.org/js/telegram-web-app.js' strategy='beforeInteractive' />
         <Header />
         <main className='mx-auto min-h-[calc(100vh-130px)] w-full max-w-6xl px-4 py-6 pb-20 md:pb-6'>
           {children}
